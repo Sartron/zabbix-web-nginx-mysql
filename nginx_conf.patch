@@ -1,0 +1,11 @@
+--- nginx.conf	2022-03-25 09:53:45.551347559 -0400
++++ nginx.conf.patched	2022-03-25 10:16:29.275767928 -0400
+@@ -51,7 +51,7 @@
+     }
+ 
+     location ~ .php$ {
+-        fastcgi_pass   unix:/tmp/php-fpm.sock;
++        fastcgi_pass   127.0.0.1:9000;
+         fastcgi_index  index.php;
+ 
+         fastcgi_param  SCRIPT_FILENAME  $webroot$fastcgi_script_name;

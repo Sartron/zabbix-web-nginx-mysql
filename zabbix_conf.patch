@@ -1,0 +1,10 @@
+--- zabbix_sock.conf	2022-03-25 09:53:45.551347559 -0400
++++ zabbix_addr.conf	2022-03-25 09:59:54.001147144 -0400
+@@ -1,6 +1,6 @@
+ [zabbix]
+ 
+-listen = /tmp/php-fpm.sock
++listen = 0.0.0.0:9000
+ 
+ clear_env = no
+ 
